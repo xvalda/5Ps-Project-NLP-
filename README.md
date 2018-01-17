@@ -52,6 +52,22 @@ The first milestones are:
 - PRODUCT: work on datasets of brands, products, 
 - measuring accuracy
 
-3. Sentiment analysis: 
+3. Sentiment analysis part 1:
+The approach is to drop the usual positive, neutral, negative paradigm. This can be infered at a later time from the mention analysis but the focus is on a more granular level. 
+- mention analysis based on the 5 Ps
+- each unique sentiment occurence (there can be several ones per mention) will take several of the 5 Ps into account: 
+- product: what or who is the object of the statement, 
+- people: from whom originates the emotional statement, author or someone else, 
+- perception: among others, what element of language (verbs, adjectives, ...) is used, what does it concern (for instance the customer service of the brand (PRODUCT), or the specific feature of a product), ...
+- create system that links the result of the analysis of each unique sentiment occurence to the mention itself
+- create system that links the result of the analysis of each unique sentiment occurence to the author database: this will help with measuring affinity with brands, ideologies, psychological dispositions, ... 
+
+SPECIFICATIONS OF THE PILOT PROJECT
+
+- Project primarily developed with R and SQL
+- Updates posted in this repository: https://github.com/xvalda/5Ps-Project-NLP-
+
+
+
 ... last updated 17 January 2018
 
